@@ -51,7 +51,7 @@
 \usepackage{graphicx}
 \usepackage{slashbox} % Диагональное разделение первой ячейки в таблицах
 
-% Цвета для гиперссылок и листингов
+% Цвета для гиперссылок и нгов
 \usepackage{color}
 
 % Гиперссылки \toc с кликабельностью
@@ -77,7 +77,7 @@
 \usepackage{listings}
 \lstset{
 	basicstyle=\footnotesize\ttfamily,
-	language=[Sharp]C, % Или другой ваш язык -- см. документацию пакета
+	%language=[Sharp]C, % Или другой ваш язык -- см. документацию пакета
 	commentstyle=\color{comment},
 	numbers=left,
 	numberstyle=\tiny\color{plain},
@@ -109,14 +109,20 @@
 	singlelinecheck=false,
 	margin=0pt,
 	font={bf,footnotesize},
-	labelsep=line
+	labelsep=endash
 }
+
 
 \usepackage{ulem} % Нормальное нижнее подчеркивание
 \usepackage{hhline} % Двойная горизонтальная линия в таблицах
 \usepackage[figure,table]{totalcount} % Подсчет изображений, таблиц
 \usepackage{rotating} % Поворот изображения вместе с названием
 \usepackage{lastpage} % Для подсчета числа страниц
+
+\usepackage{pdflscape}
+\usepackage{longtable}
+
+
 
 \makeatletter
 \renewcommand\@biblabel[1]{#1.}

@@ -1,4 +1,434 @@
 \section*{ПРИЛОЖЕНИЕ A}
 \addcontentsline{toc}{section}{ПРИЛОЖЕНИЕ A}
 
+
+\section*{Скрипты создания объектов БД}
+В листингах \ref{lst:create_db_1} -- \ref{lst:create_db_2} представлены скрипты создания объектов БД.
+
+\renewcommand{\thelisting}{А.\arabic{listing}}
+\setcounter{listing}{0}
+
+\begin{code}
+	\captionof{listing}{Скрипт создания объектов БД. Часть 1.}
+	\label{lst:create_db_1}
+	\inputminted
+	[
+	frame=single,
+	framerule=0.5pt,
+	framesep=20pt,
+	fontsize=\footnotesize,
+	tabsize=4,
+	linenos,
+	numbersep=5pt,
+	xleftmargin=10pt,
+	firstline=1,
+	lastline=27,
+	]
+	{text}
+	{lst/create-db.sql}
+\end{code}
+
+\clearpage
+
+
+\begin{code}
+	\captionsetup{aboveskip=0pt, skip=-5mm}
+	\captionof{listing}{Скрипт создания объектов БД. Часть 2.}
+	\label{lst:create_db_2}
+	\inputminted
+	[
+	frame=single,
+	framerule=0.5pt,
+	framesep=20pt,
+	fontsize=\footnotesize,
+	tabsize=4,
+	linenos,
+	numbersep=5pt,
+	xleftmargin=10pt,
+	firstline=29,  
+	lastline=59,  
+	]
+	{text}
+	{lst/create-db.sql}
+\end{code}
+
+\clearpage
+
+\section*{ПРИЛОЖЕНИЕ Б}
+\addcontentsline{toc}{section}{ПРИЛОЖЕНИЕ Б}
+\renewcommand{\thelisting}{Б.\arabic{listing}}
+\setcounter{listing}{0}
+
+\section*{Скрипты создания ролевой модели БД}
+
+В листингах \ref{lst:role} -- \ref{lst:role_2}  представлен скрипт создания ролевой модели БД.
+
+\begin{code}
+	\captionof{listing}{Скрипт создания ролевой модели БД. Часть 1.}
+	\label{lst:role}
+	\inputminted
+	[
+	frame=single,
+	framerule=0.5pt,
+	framesep=20pt,
+	fontsize=\footnotesize,
+	tabsize=4,
+	linenos,
+	numbersep=5pt,
+	xleftmargin=10pt,
+	firstline=1,  
+	lastline=24,  
+	]
+	{text}
+	{lst/role.sql}
+\end{code}
+
+\clearpage
+
+\begin{code}
+	\captionsetup{aboveskip=0pt, skip=-5mm}
+	\captionof{listing}{Скрипт создания ролевой модели БД. Часть 2.}
+	\label{lst:role_2}
+	\inputminted
+	[
+	frame=single,
+	framerule=0.5pt,
+	framesep=20pt,
+	fontsize=\footnotesize,
+	tabsize=4,
+	linenos,
+	numbersep=5pt,
+	xleftmargin=10pt,
+	firstline=25,  
+	]
+	{text}
+	{lst/role.sql}
+\end{code}
+
+\newpage
+
+\section*{ПРИЛОЖЕНИЕ В}
+\addcontentsline{toc}{section}{ПРИЛОЖЕНИЕ В}
+\renewcommand{\thelisting}{В.\arabic{listing}}
+\setcounter{listing}{0}
+
+
+\section*{Скрипты создания триггера}
+В листинге \ref{lst:trigger} представлен скрипт создания триггера для обновления количества часов, затраченных на проект.
+
+\begin{code}
+	\captionof{listing}{Скрипт создания триггера для обновления количества затраченных на проект часов.}
+	\label{lst:trigger}
+	\inputminted
+	[
+	frame=single,
+	framerule=0.5pt,
+	framesep=20pt,
+	fontsize=\footnotesize,
+	tabsize=4,
+	linenos,
+	numbersep=5pt,
+	xleftmargin=10pt,
+	]
+	{text}
+	{lst/trigger.sql}
+\end{code}
+
+\section*{ПРИЛОЖЕНИЕ Г}
+\addcontentsline{toc}{section}{ПРИЛОЖЕНИЕ Г}
+\renewcommand{\thelisting}{Г.\arabic{listing}}
+\setcounter{listing}{0}
+
+
+\section*{Паттерны взаимодействия с PostgresSQL и Redis}
+
+\begin{code}
+	\captionof{listing}{Взаимодействие с PostgreSQL. Часть 1}
+	\label{lst:postgres1}
+	\inputminted
+	[
+	frame=single,
+	framerule=0.5pt,
+	framesep=20pt,
+	fontsize=\footnotesize,
+	tabsize=4,
+	linenos,
+	numbersep=5pt,
+	xleftmargin=10pt,
+	firstline=1,  
+	lastline=31,  
+	]
+	{text}
+	{lst/p1.go}
+\end{code}
+\newpage
+\begin{code}
+	\captionsetup{aboveskip=0pt, skip=-5mm}
+	\captionof{listing}{Взаимодействие с PostgreSQL. Часть 2}
+	\label{lst:postgres2}
+	\inputminted
+	[
+	frame=single,
+	framerule=0.5pt,
+	framesep=20pt,
+	fontsize=\footnotesize,
+	tabsize=4,
+	linenos,
+	numbersep=5pt,
+	xleftmargin=10pt,
+	firstline=32,  
+	lastline=67,  
+	]
+	{text}
+	{lst/p1.go}
+\end{code}
+
+\newpage
+
+\begin{code}
+	\captionsetup{aboveskip=0pt, skip=-5mm}
+	\captionof{listing}{Взаимодействие с PostgreSQL. Часть 3}
+	\label{lst:postgres3}
+	\inputminted
+	[
+	frame=single,
+	framerule=0.5pt,
+	framesep=20pt,
+	fontsize=\footnotesize,
+	tabsize=4,
+	linenos,
+	numbersep=5pt,
+	xleftmargin=10pt,
+	firstline=68,  
+	lastline=99,  
+	]
+	{text}
+	{lst/p1.go}
+\end{code}
+
+\newpage
+\begin{code}
+		\captionsetup{aboveskip=0pt, skip=-5mm}
+	\captionof{listing}{Взаимодействие с PostgreSQL. Часть 4}
+	\label{lst:postgres4}
+	\inputminted
+	[
+	frame=single,
+	framerule=0.5pt,
+	framesep=20pt,
+	fontsize=\footnotesize,
+	tabsize=4,
+	linenos,
+	numbersep=5pt,
+	xleftmargin=10pt,
+	firstline=100,  
+	lastline=134,  
+	]
+	{text}
+	{lst/p1.go}
+\end{code}
+
+\newpage
+\begin{code}
+	\captionsetup{aboveskip=0pt, skip=-5mm}
+	\captionof{listing}{Взаимодействие с Redis. Часть 1.}
+	\label{lst:redis1}
+	\inputminted
+	[
+	frame=single,
+	framerule=0.5pt,
+	framesep=20pt,
+	fontsize=\footnotesize,
+	tabsize=4,
+	linenos,
+	numbersep=5pt,
+	xleftmargin=10pt,
+	firstline=1,  
+	lastline=36,  
+	]
+	{text}
+	{lst/r1.go}
+\end{code}
+\newpage
+
+\begin{code}
+	\captionsetup{aboveskip=0pt, skip=-5mm}
+	\captionof{listing}{Взаимодействие с Redis. Часть 2.}
+	\label{lst:redis2}
+	\inputminted
+	[
+	frame=single,
+	framerule=0.5pt,
+	framesep=20pt,
+	fontsize=\footnotesize,
+	tabsize=4,
+	linenos,
+	numbersep=5pt,
+	xleftmargin=10pt,
+	firstline=37,  
+	lastline=60,  
+	]
+	{text}
+	{lst/r1.go}
+\end{code}
+
+
+\newpage
+
+\section*{ПРИЛОЖЕНИЕ Д}
+\addcontentsline{toc}{section}{ПРИЛОЖЕНИЕ Д}
+\renewcommand{\thelisting}{Д.\arabic{listing}}
+\setcounter{listing}{0}
+
+\section*{Тестирование}
+\begin{code}
+	\captionsetup{aboveskip=0pt, skip=-5mm}
+	\captionof{listing}{Фикстуры.}
+	\label{lst:fixture}
+	\inputminted
+	[
+	frame=single,
+	framerule=0.5pt,
+	framesep=20pt,
+	fontsize=\footnotesize,
+	tabsize=4,
+	linenos,
+	numbersep=5pt,
+	xleftmargin=10pt,
+	]
+	{text}
+	{lst/fixture.py}
+\end{code}
+
+\begin{code}
+	\captionsetup{aboveskip=0pt, skip=-5mm}
+	\captionof{listing}{Тестирование на примере сущности "проект "\ . Часть 1.}
+	\label{lst:test}
+	\inputminted
+	[
+	frame=single,
+	framerule=0.5pt,
+	framesep=20pt,
+	fontsize=\footnotesize,
+	tabsize=4,
+	linenos,
+	numbersep=5pt,
+	xleftmargin=10pt,
+	firstline=1,  
+	lastline=36,  
+	]
+	{text}
+	{lst/test.py}
+\end{code}
+
+\begin{code}
+	\captionsetup{aboveskip=0pt, skip=-5mm}
+	\captionof{listing}{Тестирование на примере сущности "проект "\ . Часть 2.}
+	\label{lst:test_2}
+	\inputminted
+	[
+	frame=single,
+	framerule=0.5pt,
+	framesep=20pt,
+	fontsize=\footnotesize,
+	tabsize=4,
+	linenos,
+	numbersep=5pt,
+	xleftmargin=10pt,
+	firstline=37,  
+	lastline=71,  
+	]
+	{text}
+	{lst/test.py}
+\end{code}
+
+\newpage
+
+\begin{code}
+	\captionsetup{aboveskip=0pt, skip=-5mm}
+	\captionof{listing}{Тестирование на примере сущности "проект "\ . Часть 3.}
+	\label{lst:test_3}
+	\inputminted
+	[
+	frame=single,
+	framerule=0.5pt,
+	framesep=20pt,
+	fontsize=\footnotesize,
+	tabsize=4,
+	linenos,
+	numbersep=5pt,
+	xleftmargin=10pt,
+	firstline=72,  
+	lastline=105,  
+	]
+	{text}
+	{lst/test.py}
+\end{code}
+
+\newpage
+
+\begin{code}
+	\captionsetup{aboveskip=0pt, skip=-5mm}
+	\captionof{listing}{Тестирование на примере сущности "проект "\ . Часть 4.}
+	\label{lst:test_4}
+	\inputminted
+	[
+	frame=single,
+	framerule=0.5pt,
+	framesep=20pt,
+	fontsize=\footnotesize,
+	tabsize=4,
+	linenos,
+	numbersep=5pt,
+	xleftmargin=10pt,
+	firstline=106,  
+	lastline=140,  
+	]
+	{text}
+	{lst/test.py}
+\end{code}
+
+\newpage
+
+\begin{code}
+	\captionsetup{aboveskip=0pt, skip=-5mm}
+	\captionof{listing}{Тестирование на примере сущности "проект "\ . Часть 5.}
+	\label{lst:test_5}
+	\inputminted
+	[
+	frame=single,
+	framerule=0.5pt,
+	framesep=20pt,
+	fontsize=\footnotesize,
+	tabsize=4,
+	linenos,
+	numbersep=5pt,
+	xleftmargin=10pt,
+	firstline=141,  
+	lastline=176,  
+	]
+	{text}
+	{lst/test.py}
+\end{code}
+
+\begin{code}
+	\captionsetup{aboveskip=0pt, skip=-5mm}
+	\captionof{listing}{Тестирование на примере сущности "проект "\ . Часть 6.}
+	\label{lst:test_6}
+	\inputminted
+	[
+	frame=single,
+	framerule=0.5pt,
+	framesep=20pt,
+	fontsize=\footnotesize,
+	tabsize=4,
+	linenos,
+	numbersep=5pt,
+	xleftmargin=10pt,
+	firstline=177,
+	]
+	{text}
+	{lst/test.py}
+\end{code}
+
 \pagebreak

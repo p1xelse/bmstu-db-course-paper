@@ -1,0 +1,12 @@
+[Connection: close]
+[Host: localhost]
+[Cookie: session_token=a18271fd-1c25-4695-87a1-5a9fb749a72f]
+/user/1/projects
+/user/2/projects
+/user/3/projects
+/user/5/projects
+/user/6/projects
+/user/7/projects
+/user/8/projects
+/user/9/projects
+/user/10/projects
